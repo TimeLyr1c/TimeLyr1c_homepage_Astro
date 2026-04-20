@@ -1,12 +1,11 @@
 import type {
     SiteConfig,
-    ProfileConfig,
-    LabConfig
+    ProfileConfig
 } from "./types/config"
 
 export const siteConfig: SiteConfig = {
-    title: "Motues",
-    subTitle: "记录生活",
+    title: "TimeLyr1c",
+    subTitle: "新的心跳",
 
     backgroundImage: {
         enabled: false, // If backgroundImage is not enabled, this will be used as the background color
@@ -14,8 +13,8 @@ export const siteConfig: SiteConfig = {
     },
 
     mirrorSite: {
-        enabled: true, // If mirrorSite is enabled, this will alart the user to visit the mirror site if user is in region below
-        url: "www.motues.top",
+        enabled: false, // If mirrorSite is enabled, this will alart the user to visit the mirror site if user is in region below
+        url: "https://www.timelyr1c.com",
         region: "CN" // Region of the mirror site, 
     },
 
@@ -23,10 +22,10 @@ export const siteConfig: SiteConfig = {
 }
 
 export const profileConfig: ProfileConfig = {
-    avatar: "assets/Motues.jpg", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-    name: "Motues",
-    description: "Like River!",
-    introPage: "https://www.motues.top",
+    avatar: "assets/Avatar.jpg", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+    name: "TimeLyr1c",
+    description: "I'm Alive",
+    introPage: "https://www.timelyr1c.com",
     links: [
         /* -------------------------------- Icon -------------------------------- */
         // Visit https://icones.js.org/ for icon codes
@@ -40,70 +39,45 @@ export const profileConfig: ProfileConfig = {
         // If color is not set, it will use the icon's default color
         {
           name: "Blog",
-          url: "https://blog.motues.top",
-          icon: "fa6-solid:tree", 
+          url: "https://blog.timelyr1c.com",
+          icon: "fa6-solid:inbox", 
           color: "#0dbc79",
         },
         {
-            name: "Note",
-            url: "https://note.motues.top",
-            icon: "fa6-solid:book",
-            color: "#b4a992",
+            name: "Douyin",
+            url: "https://www.douyin.com/user/MS4wLjABAAAAgR--pWt7v5h6TWV6qYbWE8-gLzthvFt4Aw3vj0HA0x4",
+            icon: "simple-icons:tiktok",
+            color: "#777777",
         },
         {
-            name: "Lab",
-            url: "/lab",
-            icon: "fa6-solid:server",
-            color: "#72b6b3",
+            name: "Instagram",
+            url: "https://www.instagram.com/timelyr1c_hao/",
+            icon: "simple-icons:instagram",
+            color: "#f074c2",
         },
         {
             name: "GitHub",
-            url: "https://github.com/Motues",
+            url: "https://github.com/TimeLyr1c",
             icon: "fa6-brands:github",
-            color: "#888",
+            color: "#636363",
         },
         {
-            name: "Netease",
-            url: "https://music.163.com/#/user/home?id=1601379853",
-            icon: "simple-icons:neteasecloudmusic",
-            color: "#ff2822",
+            name: "Discord",
+            url: "https://discord.com/users/1280430332658843648",
+            icon: "simple-icons:discord",
+            color: "#ca60ff",
         },
         {
             name: "Mail",
-            url: "mailto:me@motues.top",
+            url: "mailto:williamhaoruibo@gmail.com",
             icon: "fa6-solid:envelope",
             color: "#43a4d1ff"
         },
+        {
+            name: "Bilibili",
+            url: "https://space.bilibili.com/1978773038",
+            icon: "simple-icons:bilibili",
+            color: "#f590e2",
+        },
     ]
 }
-
-export const labConfig : LabConfig = [
-    // Icon and color rules are same as profileConfig
-    {
-        name: "Public API",
-        description: "A public API for everyone",
-        url: "https://open.motues.top/",
-        icon: "fa6-solid:paperclip",
-        color: "#ffcf27"
-    },
-    {
-        name: "BlockBoard",
-        description: "A real-time online block board",
-        url: "https://blockboard.motues.top",
-        icon: "svg-spinners:blocks-wave", 
-        color: "#9fa1a1ff"
-    },
-    {
-        name: "Uptime Kuma",
-        description: "A fancy self-hosted monitoring tool",
-        url: "https://uptime.motues.top/status/website",
-        icon: "assets/icons/uptime-kuma.svg",
-    },
-    {
-        name: "Server",
-        description: "A server monitor",
-        url: "https://server.motues.top",
-        icon: "svg-spinners:bars-scale",
-        color: "#50b8e9ff"
-    },
-]
